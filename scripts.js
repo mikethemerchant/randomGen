@@ -85,4 +85,12 @@ encounter.items.forEach(item => {
 });
 textResult += "In the middle of the room stands, " + encounter.monster[0].description;
 
-console.log(textResult);
+//console.log(textResult);
+
+
+// list all monsters
+const monsters = loadJson(monsterFile);
+
+monsters.forEach(m => {
+    console.log(m.name + "," + m.description)
+});
