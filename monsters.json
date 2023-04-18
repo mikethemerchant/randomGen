@@ -1,0 +1,167 @@
+[
+      {
+        "id": 1,
+        "name": "Goblin",
+        "description": "A small and sneaky creature with green skin and sharp teeth.",
+        "level": 1,
+        "experience": 100,
+        "attack": 10,
+        "defence": 8,
+        "damage_dice": "1d6",
+        "hitpoints": 20
+      },
+      {
+        "id": 2,
+        "name": "Orc",
+        "description": "A large and brutish humanoid with grayish-green skin and sharp tusks.",
+        "level": 2,
+        "experience": 200,
+        "attack": 12,
+        "defence": 10,
+        "damage_dice": "1d8",
+        "hitpoints": 30
+      },
+      {
+        "id": 3,
+        "name": "Skeleton",
+        "description": "An undead creature made of bones and animated by dark magic.",
+        "level": 3,
+        "experience": 300,
+        "attack": 14,
+        "defence": 12,
+        "damage_dice": "1d10",
+        "hitpoints": 40
+      },
+      {
+        "id": 4,
+        "name": "Zombie",
+        "description": "A walking corpse with rotting flesh and an insatiable hunger for brains.",
+        "level": 4,
+        "experience": 400,
+        "attack": 16,
+        "defence": 14,
+        "damage_dice": "2d6",
+        "hitpoints": 50
+      },
+      {
+        "id": 5,
+        "name": "Giant Spider",
+        "description": "A terrifying arachnid with sharp fangs and venomous bite.",
+        "level": 5,
+        "experience": 500,
+        "attack": 18,
+        "defence": 16,
+        "damage_dice": "2d8",
+        "hitpoints": 60
+      },
+      {
+        "id": 6,
+        "name": "Troll",
+        "description": "A massive and regenerating monster with thick skin and club-like fists.",
+        "level": 6,
+        "experience": 600,
+        "attack": 20,
+        "defence": 18,
+        "damage_dice": "2d10",
+        "hitpoints": 70
+      },
+      {
+        "id": 7,
+        "name": "Minotaur",
+        "description": "A bull-headed creature with a powerful charge and deadly horns.",
+        "level": 7,
+        "experience": 700,
+        "attack": 22,
+        "defence": 20,
+        "damage_dice": "3d6",
+        "hitpoints": 80
+      },
+      {
+        "id": 8,
+        "name": "Manticore",
+        "description": "A beast with the body of a lion, the wings of a bat, and the tail of a scorpion.",
+        "level": 8,
+        "experience": 800,
+        "attack": 24,
+        "defence": 22,
+        "damage_dice": "3d8",
+        "hitpoints": 90
+      },
+      {
+        "id": 9,
+        "name": "Chimera",
+        "description": "A monstrous creature with the head of a lion, the body of a goat, and the tail of a serpent.",
+        "level": 9,
+        "experience": 900,
+        "attack": 26,
+        "defence": 24,
+        "damage_dice": "3d10",
+        "hitpoints": 100
+        },
+        {
+        "id": 10,
+        "name": "Dragon",
+        "description": "A fearsome and powerful creature with razor-sharp claws and fiery breath.",
+        "level": 10,
+        "experience": 1000,
+        "attack": 28,
+        "defence": 26,
+        "damage_dice": "4d8",
+        "hitpoints": 120
+        },
+        {
+        "id": 11,
+        "name": "Giant",
+        "description": "A towering humanoid with incredible strength and a massive club.",
+        "level": 11,
+        "experience": 1100,
+        "attack": 30,
+        "defence": 28,
+        "damage_dice": "4d10",
+        "hitpoints": 140
+        },
+        {
+        "id": 12,
+        "name": "Beholder",
+        "description": "A floating orb with multiple eyes and deadly magical powers.",
+        "level": 12,
+        "experience": 1200,
+        "attack": 32,
+        "defence": 30,
+        "damage_dice": "5d8",
+        "hitpoints": 160
+        },
+        {
+        "id": 13,
+        "name": "Kraken",
+        "description": "A massive sea monster with tentacles that can crush ships.",
+        "level": 13,
+        "experience": 1300,
+        "attack": 34,
+        "defence": 32,
+        "damage_dice": "5d10",
+        "hitpoints": 180
+        },
+        {
+        "id": 14,
+        "name": "Gorgon",
+        "description": "A creature with a body of a lion and the head of a woman, who can turn people into stone with her gaze.",
+        "level": 14,
+        "experience": 1400,
+        "attack": 36,
+        "defence": 34,
+        "damage_dice": "6d8",
+        "hitpoints": 200
+        },
+        {
+        "id": 15,
+        "name": "Lich",
+        "description": "An undead sorcerer with the power to raise armies of the dead.",
+        "level": 15,
+        "experience": 1500,
+        "attack": 38,
+        "defence": 36,
+        "damage_dice": "6d10",
+        "hitpoints": 220
+        }
+]  

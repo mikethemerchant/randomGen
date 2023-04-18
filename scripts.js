@@ -25,16 +25,64 @@ function rollDice(diceSize) {
 }
 
 // load array of rooms from rooms.json
-function loadRooms() {
+
+
+function loadJson(file) {
     const fs = require('fs');
-    const buffer = fs.readFileSync('rooms.json');
+    const buffer = fs.readFileSync(file);
     const rooms = JSON.parse(buffer);
     return rooms;
 }
 
+const roomFile = 'rooms.json';
 function getRandomRoomDescription(randomNumber) {
-    return loadRooms().find(room => room.id === randomNumber).description;
+    return loadJson(roomFile).find(room => room.id === randomNumber).description;
 }
 
-var text = getRandomRoomDescription(rollDice(10));
-console.log(text);
+// var text = getRandomRoomDescription(rollDice(10));
+// console.log(text);
+
+
+
+// return a few elements of an array
+function getRandomElements(array, numberOfElements) {
+    let randomElements = [];
+    for (let i = 0; i < numberOfElements; i++) {
+        randomElements.push(array[rollDice(array.length)-1]);
+    }
+    return randomElements;
+}
+
+const itemsFile = 'items.json';
+const itemsInRoom = getRandomElements(loadJson(itemsFile), 3);
+
+// itemsInRoom.forEach(item => {
+//     console.log(item);
+// });
+
+const monsterFile = 'monsters.json';
+const monstersInRoom = getRandomElements(loadJson(monsterFile), 1);
+
+// // monstersInRoom.forEach(monster => {
+//     console.log(monster);
+// });
+    
+
+function createEnconter() {
+    const encounter = {
+        roomDescription: getRandomRoomDescription(rollDice(10)),
+        monster: getRandomElements(loadJson(monsterFile), 1),
+        items: getRandomElements(loadJson(itemsFile), 3)
+    }
+    return encounter;
+}
+
+const encounter = createEnconter(); 
+
+var textResult =  encounter.roomDescription + " Looking around the room you see, "
+encounter.items.forEach(item => {
+    textResult += item.description + " ";
+});
+textResult += "In the middle of the room stands, " + encounter.monster[0].description;
+
+console.log(textResult);

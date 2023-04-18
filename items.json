@@ -1,0 +1,152 @@
+[
+    {
+      "id": 1,
+      "name": "Rusty Sword",
+      "description": "A worn and battered sword with a chipped edge.",
+      "hitpoints": 20
+    },
+    {
+      "id": 2,
+      "name": "Leather Armor",
+      "description": "A set of worn leather armor with some patches and tears.",
+      "hitpoints": 40
+    },
+    {
+      "id": 3,
+      "name": "Potion of Healing",
+      "description": "A small vial filled with a glowing red liquid that restores health.",
+      "hitpoints": 0
+    },
+    {
+      "id": 4,
+      "name": "Scroll of Fireball",
+      "description": "A rolled up parchment with magical incantations that unleash a blast of fire.",
+      "hitpoints": 0
+    },
+    {
+      "id": 5,
+      "name": "Silver Dagger",
+      "description": "A sleek dagger with a sharp silver blade that glimmers in the light.",
+      "hitpoints": 25
+    },
+    {
+      "id": 6,
+      "name": "Elven Bow",
+      "description": "A finely crafted bow made of polished wood and elven silver.",
+      "hitpoints": 30
+    },
+    {
+      "id": 7,
+      "name": "Cloak of Invisibility",
+      "description": "A magical cloak that makes the wearer invisible for a short time.",
+      "hitpoints": 0
+    },
+    {
+      "id": 8,
+      "name": "Giant's Club",
+      "description": "A massive wooden club that was once wielded by a giant.",
+      "hitpoints": 60
+    },
+    {
+      "id": 9,
+      "name": "Ring of Protection",
+      "description": "A ring that provides some measure of protection against attacks.",
+      "hitpoints": 0
+    },
+    {
+      "id": 10,
+      "name": "Helmet of Night Vision",
+      "description": "A helmet with magical lenses that allow the wearer to see in the dark.",
+      "hitpoints": 0
+    },
+    {
+      "id": 11,
+      "name": "Tome of Knowledge",
+      "description": "A thick leather-bound book filled with arcane knowledge and spells.",
+      "hitpoints": 0
+    },
+    {
+      "id": 12,
+      "name": "Frost Giant's Axe",
+      "description": "A massive axe with a blade of ice that freezes its targets.",
+      "hitpoints": 70
+    },
+    {
+      "id": 13,
+      "name": "Staff of Lightning",
+      "description": "A gnarled wooden staff that crackles with lightning bolts.",
+      "hitpoints": 0
+    },
+    {
+      "id": 14,
+      "name": "Golden Chalice",
+      "description": "A beautiful golden chalice encrusted with precious gems.",
+      "hitpoints": 0
+    },
+    {
+      "id": 15,
+      "name": "Crystal Ball",
+      "description": "A mystical crystal ball that can reveal secrets and visions.",
+      "hitpoints": 0
+    },   
+    {
+        "id": 1,
+        "name": "Stone Chair",
+        "description": "A heavy stone chair with a worn cushion.",
+        "hitpoints": 30
+    },
+    {
+        "id": 2,
+        "name": "Wooden Table",
+        "description": "A sturdy wooden table with a few scratches and stains.",
+        "hitpoints": 40
+    },
+    {
+        "id": 3,
+        "name": "Bronze Statue",
+        "description": "A small bronze statue of a mythical creature with intricate details.",
+        "hitpoints": 50
+    },
+    {
+        "id": 4,
+        "name": "Tapestry",
+        "description": "A large tapestry depicting a scene from a forgotten legend.",
+        "hitpoints": 20
+    },
+    {
+        "id": 5,
+        "name": "Iron Torch Holder",
+        "description": "A sturdy iron holder with a torch that still burns brightly.",
+        "hitpoints": 20
+    },
+    {
+        "id": 6,
+        "name": "Wooden Chest",
+        "description": "A wooden chest with a rusty lock and a few scratches.",
+        "hitpoints": 50
+    },
+    {
+        "id": 7,
+        "name": "Stone Column",
+        "description": "A massive stone column that supports the ceiling of the dungeon.",
+        "hitpoints": 80
+    },
+    {
+        "id": 8,
+        "name": "Iron Grate",
+        "description": "An iron grate that covers a pit or a hole in the ground.",
+        "hitpoints": 60
+    },
+    {
+        "id": 9,
+        "name": "Wooden Stool",
+        "description": "A small wooden stool with a cushion made of woven fibers.",
+        "hitpoints": 20
+    },
+    {
+        "id": 10,
+        "name": "Copper Goblet",
+        "description": "A copper goblet with intricate engravings and a few dents.",
+        "hitpoints": 10
+    }
+]
