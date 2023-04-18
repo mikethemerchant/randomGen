@@ -8,7 +8,8 @@
         "attack": 10,
         "defence": 8,
         "damage_dice": "1d6",
-        "hitpoints": 20
+        "hitpoints": 20,
+        "image": "Goblin.png"
       },
       {
         "id": 2,
@@ -19,7 +20,8 @@
         "attack": 12,
         "defence": 10,
         "damage_dice": "1d8",
-        "hitpoints": 30
+        "hitpoints": 30,
+        "image": "Orc.png"
       },
       {
         "id": 3,
@@ -30,7 +32,8 @@
         "attack": 14,
         "defence": 12,
         "damage_dice": "1d10",
-        "hitpoints": 40
+        "hitpoints": 40,
+        "image": "Skeleton.png"
       },
       {
         "id": 4,
@@ -41,7 +44,8 @@
         "attack": 16,
         "defence": 14,
         "damage_dice": "2d6",
-        "hitpoints": 50
+        "hitpoints": 50,
+        "image": "Zombie.png"
       },
       {
         "id": 5,
@@ -52,7 +56,8 @@
         "attack": 18,
         "defence": 16,
         "damage_dice": "2d8",
-        "hitpoints": 60
+        "hitpoints": 60,
+        "image": "Giant Spider.png"
       },
       {
         "id": 6,
@@ -63,7 +68,8 @@
         "attack": 20,
         "defence": 18,
         "damage_dice": "2d10",
-        "hitpoints": 70
+        "hitpoints": 70,
+        "image": "Troll.png"
       },
       {
         "id": 7,
@@ -74,7 +80,8 @@
         "attack": 22,
         "defence": 20,
         "damage_dice": "3d6",
-        "hitpoints": 80
+        "hitpoints": 80,
+        "image": "Minotaur.png"
       },
       {
         "id": 8,
@@ -85,7 +92,8 @@
         "attack": 24,
         "defence": 22,
         "damage_dice": "3d8",
-        "hitpoints": 90
+        "hitpoints": 90,
+        "image": "Manticore.png"
       },
       {
         "id": 9,
@@ -96,7 +104,8 @@
         "attack": 26,
         "defence": 24,
         "damage_dice": "3d10",
-        "hitpoints": 100
+        "hitpoints": 100,
+        "image": "Chimera.png"
         },
         {
         "id": 10,
@@ -107,7 +116,8 @@
         "attack": 28,
         "defence": 26,
         "damage_dice": "4d8",
-        "hitpoints": 120
+        "hitpoints": 120,
+        "image": "Dragon.png"
         },
         {
         "id": 11,
@@ -118,7 +128,8 @@
         "attack": 30,
         "defence": 28,
         "damage_dice": "4d10",
-        "hitpoints": 140
+        "hitpoints": 140,
+        "image": "Giant.png"
         },
         {
         "id": 12,
@@ -129,7 +140,8 @@
         "attack": 32,
         "defence": 30,
         "damage_dice": "5d8",
-        "hitpoints": 160
+        "hitpoints": 160,
+        "image": "Beholder.png"
         },
         {
         "id": 13,
@@ -140,18 +152,20 @@
         "attack": 34,
         "defence": 32,
         "damage_dice": "5d10",
-        "hitpoints": 180
+        "hitpoints": 180,
+        "image": "Kraken.png"
         },
         {
         "id": 14,
-        "name": "Gorgon",
-        "description": "A creature with a body of a lion and the head of a woman, who can turn people into stone with her gaze.",
+        "name": "Medusa",
+        "description": "A creature with a body of a snake and the head of a woman, who can turn people into stone with her gaze.",
         "level": 14,
         "experience": 1400,
         "attack": 36,
         "defence": 34,
         "damage_dice": "6d8",
-        "hitpoints": 200
+        "hitpoints": 200,
+        "image": "Medusa.png"
         },
         {
         "id": 15,
@@ -162,6 +176,7 @@
         "attack": 38,
         "defence": 36,
         "damage_dice": "6d10",
-        "hitpoints": 220
+        "hitpoints": 220,
+        "image": "Lich.png"
         }
 ]  
