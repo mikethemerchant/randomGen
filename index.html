@@ -2,7 +2,6 @@
     <head>
         <meta charset="utf-8" />
         <title>Mystery Dungeon Adventure</title>
-        <script src="script.js"></script>
     </head>
     <body>
         <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
@@ -11,21 +10,21 @@
         
         <div id="root"></div>
         <script type="text/babel">
+ 
             function App() {
-                const [image, setImage] = React.useState('img/Library.png')
+                const [image, setImage] = React.useState('img/enterDungeon.png')
                 
                 async function onButttonClick() {
-                    const monsterArray = await loadJson('rooms.json');
-                    setImage('img/' + monsterArray[Math.floor(
-                                                            Math.random() * monsterArray.length + 1
-                                                            )
-                                                  ].name + '.png')
+                    let randomId = Math.floor((Math.random() * 10)+1);
+                    const ary = await loadJson('rooms.json', randomId);
+                    setImage('img/' + ary[0].name + '.png')
                 }
-
-                async function loadJson(file) {
+            
+                async function loadJson(file, id) {
                     try {
                         const response = await fetch(file);
-                        return response.json();
+                        const data = await response.json()
+                        return data.filter(data => data.id === id);
                     } catch (error) {
                         console.error('Error loading JSON file:', error);
                     }
