@@ -10,16 +10,14 @@
         
         <div id="root"></div>
         <script type="text/babel">
- 
-            function App() {
-                const [image, setImage] = React.useState('img/enterDungeon.png')
-                
-                async function onButttonClick() {
-                    let randomId = Math.floor((Math.random() * 10)+1);
-                    const ary = await loadJson('rooms.json', randomId);
-                    setImage('img/' + ary[0].name + '.png')
+            function Background ({imageId}) {
+                const [image, setImage] = React.useState('')
+
+                async function getImage(id) {
+                    const data = await loadJson('rooms.json', id);
+                    setImage(data[0].image);
                 }
-            
+
                 async function loadJson(file, id) {
                     try {
                         const response = await fetch(file);
@@ -33,6 +31,22 @@
                 return (
                     <div>
                         <img src={image}></img>
+                    </div>
+                )
+            }
+
+ 
+            function App() {
+                const [imageId, setImageId] = React.useState('1')
+                
+                async function onButttonClick() {
+                    let randomId = Math.floor((Math.random() * 10)+1);
+                    setImageId(randomId);
+                }
+            
+                return (
+                    <div>
+                        <Background imageId={imageId} />
                         <button onClick={onButttonClick}>Move North</button>
                     </div>
                 )
