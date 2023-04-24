@@ -178,5 +178,17 @@
         "damage_dice": "6d10",
         "hitpoints": 220,
         "image": "Lich.png"
+        },
+        {
+          "id": 16,
+          "name": "start",
+          "description": "start",
+          "level": 1,
+          "experience": 1,
+          "attack": 1,
+          "defence": 1,
+          "damage_dice": "1d20",
+          "hitpoints": 1,
+          "image": "enterDungeon.png"
         }
 ]  

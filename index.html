@@ -10,18 +10,23 @@
         
         <div id="root"></div>
         <script type="text/babel">
-            function Background ({imageId}) {
-                const [image, setImage] = React.useState('')
+
+            function Image ({imageId}) {
+                const [image, setImage] = React.useState(16)
+
+                React.useEffect(() => {
+                    getImage(imageId)
+                }, [imageId])
 
                 async function getImage(id) {
-                    const data = await loadJson('rooms.json', id);
-                    setImage(data[0].image);
+                    const data = await loadJson('monsters.json', id);
+                    setImage('img/' + data[0].image);
                 }
 
                 async function loadJson(file, id) {
                     try {
                         const response = await fetch(file);
-                        const data = await response.json()
+                        const data = await response.json();
                         return data.filter(data => data.id === id);
                     } catch (error) {
                         console.error('Error loading JSON file:', error);
@@ -30,14 +35,13 @@
 
                 return (
                     <div>
-                        <img src={image}></img>
+                        <img src={image} width="500" height="500"></img>
                     </div>
                 )
             }
 
- 
             function App() {
-                const [imageId, setImageId] = React.useState('1')
+                const [imageId, setImageId] = React.useState(16)
                 
                 async function onButttonClick() {
                     let randomId = Math.floor((Math.random() * 10)+1);
@@ -46,7 +50,7 @@
             
                 return (
                     <div>
-                        <Background imageId={imageId} />
+                        <Image imageId={imageId} />
                         <button onClick={onButttonClick}>Move North</button>
                     </div>
                 )
