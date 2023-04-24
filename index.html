@@ -19,12 +19,14 @@
                 }, [imageId])
 
                 async function getImage(id) {
+                    // set image name from json file
                     const data = await loadJson('rooms.json', id);
                     setImage('img/' + data[0].image);
                 }
 
                 async function loadJson(file, id) {
                     try {
+                        // load image name from json file
                         const response = await fetch(file);
                         const data = await response.json();
                         return data.filter(data => data.id === id);
