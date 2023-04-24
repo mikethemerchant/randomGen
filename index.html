@@ -19,7 +19,7 @@
                 }, [imageId])
 
                 async function getImage(id) {
-                    const data = await loadJson('monsters.json', id);
+                    const data = await loadJson('rooms.json', id);
                     setImage('img/' + data[0].image);
                 }
 
@@ -40,6 +40,35 @@
                 )
             }
 
+            function Description({encounterId}) {
+                const [text, setText] = React.useState('');
+
+                React.useEffect(() => {
+                    getDescription(encounterId)
+                }, [encounterId])
+
+                async function getDescription(id) {
+                    const data = await loadJson('rooms.json', id);
+                    setText(data[0].description);
+                }
+
+                async function loadJson(file, id) {
+                    try {
+                        const response = await fetch(file);
+                        const data = await response.json();
+                        return data.filter(data => data.id === id);
+                    } catch (error) {
+                        console.error('Error loading JSON file:', error);
+                    }
+                }
+              
+                return (
+                    <div>
+                        <p>{text}</p>
+                    </div>
+                )
+            }
+
             function App() {
                 const [imageId, setImageId] = React.useState(16)
                 
@@ -51,6 +80,7 @@
                 return (
                     <div>
                         <Image imageId={imageId} />
+                        <Description encounterId={imageId} />
                         <button onClick={onButttonClick}>Move North</button>
                     </div>
                 )
